@@ -1,0 +1,11 @@
+2019-01-03 17:59:51.706 [main] ERROR shenzhen.teamway.PropertiesUtils - 读取properties配置文件异常
+java.io.FileNotFoundException: E:\config\jdbc.properties (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at shenzhen.teamway.PropertiesUtils.loadPropertiesFile(PropertiesUtils.java:35)
+	at shenzhen.teamway.PropertiesUtils.readConfigFile(PropertiesUtils.java:61)
+	at org.teamway.dao.MyBatisUtils.init(MyBatisUtils.java:35)
+	at de.onvif.Main.main(Main.java:36)
+2019-01-03 17:59:51.719 [main] ERROR shenzhen.teamway.PropertiesUtils - 获取到的properties值为空，key: driver
